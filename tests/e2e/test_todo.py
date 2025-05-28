@@ -71,5 +71,4 @@ class TestTodoApp(unittest.TestCase):
             tasks = json.load(f)
         self.assertEqual(tasks[0]["description"], "Read a book")
 
-if __name__ == '__main__':
-    unittest.main()
+
