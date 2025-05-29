@@ -35,12 +35,20 @@ impl<T> Stack<T> {
     ///
     /// # Returns
     ///
+    /// Removes and returns the element at the top of the stack, if any.
+    ///
+    /// # Returns
+    ///
     /// An `Option` containing the element at the top of the stack, or `None` if the stack is empty.
     pub fn pop(&mut self) -> Option<T> {
         self.data.pop()
     }
 
     /// Returns a reference to the top element of the stack, without removing it.
+    ///
+    /// # Returns
+    ///
+    /// An `Option` containing a reference to the top element of the stack, or `None` if the stack is empty.
     pub fn peek(&self) -> Option<&T> {
         self.data.last()
     }
