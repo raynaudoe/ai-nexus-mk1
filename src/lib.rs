@@ -66,11 +66,11 @@ impl<T> Stack<T> {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::Stack;
 
     #[test]
-    fn test_push_pop() {
-        let mut stack = Stack::new();
+    fn push_pop_works() {
+        let mut stack: Stack<i32> = Stack::new();
         stack.push(1);
         stack.push(2);
         assert_eq!(stack.pop(), Some(2));
@@ -79,8 +79,8 @@ mod tests {
     }
 
     #[test]
-    fn test_peek() {
-        let mut stack = Stack::new();
+    fn peek_works() {
+        let mut stack: Stack<i32> = Stack::new();
         stack.push(1);
         assert_eq!(stack.peek(), Some(&1));
         stack.pop();
@@ -88,8 +88,8 @@ mod tests {
     }
 
     #[test]
-    fn test_len() {
-        let mut stack = Stack::new();
+    fn len_works() {
+        let mut stack: Stack<i32> = Stack::new();
         assert_eq!(stack.len(), 0);
         stack.push(1);
         assert_eq!(stack.len(), 1);
@@ -100,8 +100,8 @@ mod tests {
     }
 
     #[test]
-    fn test_is_empty() {
-        let mut stack = Stack::new();
+    fn is_empty_works() {
+        let mut stack: Stack<i32> = Stack::new();
         assert_eq!(stack.is_empty(), true);
         stack.push(1);
         assert_eq!(stack.is_empty(), false);
