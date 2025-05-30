@@ -30,5 +30,4 @@ class TestStack(unittest.TestCase):
         self.stack.push(1)
         self.assertFalse(self.stack.is_empty())
 
-if __name__ == '__main__':
-    unittest.main()
+
