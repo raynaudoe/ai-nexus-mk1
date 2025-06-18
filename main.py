@@ -1,6 +1,7 @@
 from stack.stack import Stack
 
 if __name__ == "__main__":
+    print("Stack v0.0.1")
     stack = Stack()
     print(f"Is stack empty? {stack.is_empty()}")  # True
 
